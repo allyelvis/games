@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Addition Quiz</title>
+</head>
+<body>
+    <h1>Simple Addition Quiz</h1>
+    <p id="question"></p>
+    <input type="number" id="answer" />
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        document.getElementById('question').textContent = `What is ${num1} + ${num2}?`;
+
+        function checkAnswer() {
+            let userAnswer = parseInt(document.getElementById('answer').value);
+            let correctAnswer = num1 + num2;
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').textContent = "Correct!";
+            } else {
+                document.getElementById('result').textContent = "Try again!";
+            }
+        }
+    </script>
+</body>
+</html>
