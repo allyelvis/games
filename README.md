@@ -69,5 +69,3 @@ Contributions are welcome! Feel free to fork this repository and submit pull req
 For any questions, feel free to contact us at allyelvis6569@gmail.com
 
 ```
-
-Replace `[your-email@example.com](mailto:your-email@example.com)` with your actual email address or preferred contact information.
